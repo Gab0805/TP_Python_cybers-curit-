@@ -1,0 +1,24 @@
+# La fonction est_premier prend un entier en entrée et 
+# renvoie True s'il est premier, sinon renvoie False.
+def est_premier(entier): # la fonction permet de déterminier si entier est un nombre premier ou non
+    n = entier           # n a la même valeur que entier
+    while n>2:              
+        if entier % (n-1) == 0: # si le reste de la division euclidienne de n par n-1 est àgale à 0
+           return False         # alors n n'est pas un nombre premier
+        else: n=n-1
+    if n==2: return True  # si n est éagle à 2, alors c'est un nombre premier
+
+# controle de saisie 
+while True:  
+    try:
+        nbre_entier = int(input("Donner un nombre entier: " ))
+        if nbre_entier > 0:
+            if est_premier(nbre_entier):
+                print(nbre_entier, "est un nombre premier")
+            else: print(nbre_entier, "n'est pas un nombre premier")
+            break
+        else:
+            print("Erreur, vous avez entré un nombre négatif")
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")
+

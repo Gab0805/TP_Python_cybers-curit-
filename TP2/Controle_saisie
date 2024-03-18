@@ -1,0 +1,31 @@
+
+#while True:
+#    try:
+#       age = int(input("Donner votre age svp: "))
+#        if age > 0:
+#            print("votre age est: ", age)
+#            break
+#        else:
+#            print("Erreur, vous avez entré un nombre négatif")
+#    except ValueError:
+#        print("Erreur, vous avez entré un caractére"
+def control_saisie(entier):
+    while True:
+        try:
+            if entier >= 0:
+                return True
+                break
+            else:
+                print("Erreur, vous avez entré un nombre négatif")
+                return False
+        except ValueError:
+            print("Erreur, vous avez entré un caractére")
+            return False
+    
+age= int(input("Donner votre age svp: "))
+
+while control_saisie(age) == False:
+    age = int(input("Donner votre age svp: "))
+
+if control_saisie(age):
+    print("votre age est: ", age)

@@ -1,0 +1,10 @@
+x = int(input("Donnez-moi votre age svp: "))
+
+while x < 0:
+       print( "\nErreur, veuillez entrer un nombre positif svp") 
+       x = int(input("Donnez-moi votre age : "))
+
+if x >= 18:
+       print( "Vous êtes majeur")
+else:
+       print( "Vous êtes mineur")

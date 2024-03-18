@@ -1,0 +1,32 @@
+#def calculer_moyenne(tableau_notes):
+#   taille = len(tableau_notes)
+#    if taille == 0:
+#        return 0
+#    else:
+#        somme = sum(tableau_notes)
+#        moyenne = somme/taille
+#        return moyenne
+
+
+def calculer_moyenne(tableau_notes, taille):
+    if taille == 0:
+        return 0
+    else: 
+        somme = sum(tableau_notes)
+        moyenne = somme/taille
+        return moyenne
+
+#try:
+taille_tab = int(input("Donner la taille du tableau: "))
+
+notes = [] # Crée un tableau de notes vide
+
+for i in range(taille_tab):
+
+    une_note = int(input(f"Entrer la  note {i+1}: "))
+    notes.append(une_note) # insert une note en dernière position dans le tableau de notes
+
+#except ValueError:
+#     taille_tab = int(input("Erreur, Donner la taille du tableau: "))
+
+print("la moyenne de la classe est :", calculer_moyenne(notes, taille_tab))

@@ -1,0 +1,27 @@
+# la fonction calculer_moyenne permet de calculler la moyenne des nombres saisis 
+
+def calculer_moyenne(tableau_nbre):
+    taille = len(tableau_nbre)
+    somme = sum(tableau_nbre)
+    moyenne = somme/taille
+    return moyenne
+
+notes = [] # Crée un tableau de notes vide
+
+# controle de saisie 
+while True:  
+    try:
+        taille_tab = int(input("Donner la taille du tableau: "))
+        if taille_tab > 0:
+            for i in range(taille_tab):
+                une_note = int(input(f"Entrer la  note {i+1}: "))
+                notes.append(une_note) # insert la note saisie en dernière position dans le tableau de notes
+            print("la moyenne de la classe est :", calculer_moyenne(notes))
+            break
+        else: 
+            print("Erreur, vous avez entré un nombre négatif")
+
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")
+
+        """ """

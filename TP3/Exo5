@@ -1,0 +1,4 @@
+
+
+carrés_nbres = [i**2 for i in range(1, 11)] #crée une liste contenant les carrés des nombres de 1 à 10
+print(carrés_nbres) # affiche la liste

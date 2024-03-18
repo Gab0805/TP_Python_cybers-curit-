@@ -1,0 +1,15 @@
+# la fonction somme permet de calculer la somme de deux nombres
+def somme (nb1, nb2):
+    return nb1+nb2 
+
+# controle de saisie 
+while True:  
+    try:
+        a = float(input("Donnez un nombre: "))
+        b = float(input("Donnez un nombre: "))
+        print ("la somme des deux nombres est:", somme(a,b))
+        break
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")
+
+

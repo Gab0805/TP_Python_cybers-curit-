@@ -1,0 +1,21 @@
+# on définit la factorielle d'un nombre entier n
+def factorielle(n):
+    if n==1 or 0:  # Si n est égale à 1 ou 0
+        return 1   # alors sa factorielle est égale à 1
+    else:
+        return n*factorielle(n-1) # Sinon factorielle (n) = n*factorielle(n-1)
+
+# controle de saisie 
+while True:  
+    try:
+        entier = int(input("Donner un nombre entier: " ))
+        if entier > 0:
+            print ("Son factorielle est: ", factorielle(entier))
+            break
+        else:
+            print("Erreur, vous avez entré un nombre négatif")
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")
+
+
+

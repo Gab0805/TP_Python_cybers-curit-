@@ -1,0 +1,17 @@
+# Voici un script python qui affiche "Bonjour, monde!" à l'écran.
+print("\n Bonjour, monde!")
+
+# Voici un script python qui affiche mon nom à l'écran.
+Monnom ='Djibril'
+print("\n Mon nom est", Monnom)
+
+# Créer la fonction saluer(nom)qui prend un nom en paramètre et retourne une chaîne de
+# caractères saluant la personne avec ce nom.
+def saluer(nom):
+    return f"\n Bonjour, {nom}!"
+message= saluer(Monnom)
+print(message )
+
+
+
+

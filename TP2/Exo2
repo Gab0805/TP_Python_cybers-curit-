@@ -1,0 +1,17 @@
+# la fonction produit permet de calculer le produit de 2 nombres
+def produit (nb1, nb2):
+    return nb1*nb2 
+
+# controle de saisie 
+while True:  
+    try:
+        a = float(input("Donnez un nombre: "))
+        b = float(input("Donnez un nombre: "))
+        print ("Le produit des deux nombres est:", produit(a,b))
+        break
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")
+
+
+
+

@@ -1,0 +1,20 @@
+"""
+Importez le module operations créé dans l'exercice précédent dans un nouveau
+fichier Python.
+Utilisez les fonctions addition et multiplication du module importé pour
+effectuer des opérations arithmétiques avec des nombres saisis par l'utilisateur.
+
+"""
+
+from operation import * # permet d'importer le module operation
+
+# controle de saisie 
+while True:  
+    try:
+        a = float(input("Donnez un nombre: "))
+        b = float(input("Donnez un nombre: "))
+        print (f"la somme des deux nombres {a} et {b} est:", addition(a,b))
+        print (f"le produit des deux nombres {a} et {b} est:", multiplication(a,b))
+        break
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")

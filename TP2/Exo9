@@ -1,0 +1,28 @@
+
+# Trier un tableau dans l'ordre croissant
+def trie_ordre_croissant(tableau_nbre) :
+    tableau_nbre.sort()  # La fonction sort() est prédéfinie dans Python. Elle permet de trier 
+    return tableau_nbre  # de trier un tbleau de nombres
+
+nombres = [] # Crée un tableau de nombres vide
+
+# On remplit le tableau de nombres en mettant en place une contrôle de saisie
+while True:  # permet de controler la saisie de la taille du tableau
+    try:
+        taille_tab = int(input("Donner la taille du tableau: "))
+        if taille_tab > 0:
+            for i in range(taille_tab):
+                un_nombre = float(input(f"Entrer la  note {i+1}: ")) # On saisit un nombre
+                while True:  # permet de controler la saisie d'un nombre du tableau
+                    try:
+                        nombres.append(un_nombre) # insert le nombre saisie en dernière position dans le tableau de nombres
+                        break
+                    except ValueError: # si on choisit un caractère, on affiche un message d'erreur
+                        print("Erreur, vous avez entré un caractére")
+            print("Voici le tableau trié dans lordre croissant :", trie_ordre_croissant(nombres))
+            break
+        else: 
+            print("Erreur, vous avez entré un nombre négatif")
+
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")

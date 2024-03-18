@@ -1,0 +1,14 @@
+# Création d'une liste de dictionnaires représentant les étudiants
+étudiants = [
+    {"nom" : "Gabriel", "note" : 7},
+    {"nom" : "Anta", "note" : 11},
+    {"nom" : "Victor", "note" : 9},
+    {"nom" : "Jeanne", "note" : 15},
+    {"nom" : "Adama", "note" : 17}
+]
+
+# Affichage des noms des étudiants dont la note est supérieure ou égale à 10
+print("Noms des étudiants ayant une note >= 10 :")
+for étu in étudiants:
+    if étu["note"] >= 10:
+        print(étu["nom"])

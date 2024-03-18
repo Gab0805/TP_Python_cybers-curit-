@@ -1,0 +1,33 @@
+# personne est un dictionnaire avec les clés nom, âge et ville 
+personne = {
+    "nom" : "Djibril",
+    "âge" : 25,
+    "ville" : "Québec" 
+}
+
+# Affiche le dictionnaire créé
+print("Dictionnaire initial :", personne)
+
+# Affiche la valeur associée à la clé âge
+print(f"L'âge de {personne["nom"]} est : {personne["âge"]} ans")
+
+# Modifie de la valeur associée à la clé ville
+personne["ville"] = "Paris"
+
+# Affiche le dictionnaire après modification de la clé ville
+print("Dictionnaire après modification  de la ville:", personne)
+
+# Ajout d'une nouvelle paire clé-valeur au dictionnaire pour représenter le sexe de la personne
+personne["sexe"] = "Masculin"
+
+# Affiche le dictionnaire après ajout de la clé sexe
+print("Dictionnaire après ajout du sexe :", personne)
+
+# Suppression de la clé ville du dictionnaire
+del personne["ville"]
+
+# Affiche le dictionnaire après avoir supprimé la clé ville
+print("Dictionnaire après suppression ville :", personne) 
+
+for cle,valeur in personne.items():
+    print(cle,valeur)

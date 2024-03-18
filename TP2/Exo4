@@ -1,0 +1,20 @@
+# la fonction pgdc donne le plus grans diviseur commun entre deux entiers. 
+def pgdc(a,b) :
+    while b :
+        a, b = b, a % b
+    return a
+
+# controle de saisie 
+import math
+while True:  
+    try:
+        a = int(input("Donnez un nombre entier: "))
+        b = int(input("Donnez un nombre entier: "))
+        print ("le pgdc des nombres ",a, "et", b, "est :", math.gcd(a, b))
+        break
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")
+
+# on peut utiliser la fonction intégrée math.gcd(a, b) pour obtenir le PGCD de deux entiers:
+# import math
+# math.gcd(a, b)

@@ -1,0 +1,26 @@
+# Créer une liste contenant des entiers de 1 à 5
+nombres = [i for i in range(1,6)]
+
+# Affiche une liste contenant des entiers de 1 à 5
+print("la liste des nombres de 1 à 5 :", nombres)
+
+# Ajoute les entiers 6 à 10 à la fin de la liste
+nombres.extend([6, 7, 8, 9, 10]) # ou nombres.extend(list(range(6, 11)))
+
+# Affiche la nouvelle liste apres l'ajout
+print("la liste après ajout :", nombres)
+
+# Affiche la longueur de la liste
+print("Longueur de la liste :", len(nombres))
+
+# Supprime le nombre 3 de la liste
+nombres.remove(3)
+
+# Affiche la liste après suppression du chiffre 3
+print("la liste après supprression du chiffre 3:", nombres)
+
+# Trier la liste dans l'ordre décroissant
+nombres.sort(reverse=True)
+
+# Affiche la liste triée par ordre décroissant
+print("Liste dans l'ordre décroissant :", nombres)

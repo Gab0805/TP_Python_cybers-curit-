@@ -1,0 +1,18 @@
+
+# La fonction est_present prend une liste et une valeur en entrée, 
+# et renvoie True si la valeur est présente dans la liste, sinon renvoie False.
+def est_present(liste, mot):
+    if mot in liste: # si le mot recherché est dans la liste
+        return True  # alors on retourne True
+    else: return False # sinon on retourne False
+
+# Initialisation de la liste
+Ma_liste = ["lundi", "Paul", "Avril", "Paris", "Heure", "Collége", "Python"]
+
+# saisie en entrée, le mot à rechercher dans Ma_liste
+chercher_mot = str(input("mot à chercher: " ))
+
+
+if est_present(Ma_liste, chercher_mot): # si le mot saisi est dans la liste 
+    print(chercher_mot, "est un élément de la liste") # le mot recherché est dans la liste
+else: print(chercher_mot, "n'est pas un élément de la liste") # le mot recherché n'est pas dans la liste

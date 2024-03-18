@@ -1,0 +1,16 @@
+
+jours_de_la_semaine = ["lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+print("\nVoici tous les jours de la semaine:")
+for jour in jours_de_la_semaine:
+    print("\n", jour)
+
+les_mois_année =("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Décembre")
+print("\nVoici tous les mois de l'année:")
+i=0
+while i < 12: 
+    print("\n", les_mois_année[i])
+    i=i+1
+
+dictionnaire_capitales_pays = {"Sénégal": "Dakar", "Canada": "Ottawa", "France": "Paris", "USA": "Washington", "Espagne": "Madrid", "Suisse": "Bern"}
+dictionnaire_capitales_pays["Niger"] = "Niamey"
+print(dictionnaire_capitales_pays)

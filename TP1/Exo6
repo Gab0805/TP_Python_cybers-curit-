@@ -1,0 +1,5 @@
+def salut():
+    return f"\n Bonjour!"
+
+mon_nom = str(input("Donnez votre nom svp: "))
+print(salut(),mon_nom)

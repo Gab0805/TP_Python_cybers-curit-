@@ -1,0 +1,26 @@
+"""
+Importez le package math_functions créé dans l'exercice précédent dans un
+nouveau fichier Python.
+Utilisez la fonction factorielle du module basic pour calculer la factorielle d'un
+nombre saisi par l'utilisateur.
+Utilisez la fonction puissance du module advanced pour calculer la puissance
+de deux nombres saisis par l'utilisateur.
+
+"""
+
+from math_functions import advanced, basic # permet d'importer le module operation
+
+
+# controle de saisie 
+while True:  
+    try:
+        entier = int(input("Donner un nombre entier: " ))
+        if entier > 0:
+            print ("Son factorielle est: ", factorielle(entier))
+            break
+        else:
+            print("Erreur, vous avez entré un nombre négatif")
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")
+
+

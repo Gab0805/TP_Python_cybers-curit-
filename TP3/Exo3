@@ -1,0 +1,20 @@
+
+# Création d'une liste de noms
+noms = ['Gabriel', 'Adama', 'Mamad']
+
+# Création d'une liste d'âges
+âges = [25, 35, 30]
+
+# Créationvdictionnaire appelé personnes en associant chaque nom à l'âge correspondant
+personnes = dict(zip(noms, âges))
+
+# Affiche le dictionnaire des personnes
+print("Dictionnaire initial des personnes :", personnes)
+
+# Ajout d'une nouvelle personne au dictionnaire en utilisant les données de l'utilisateur pour le nom et l'âge
+nom_nouvelle_personne = input("Entrez le nom de la nouvelle personne à ajouter: ")
+âge_nouvelle_personne = int(input("Entrez l'âge de la nouvelle personne à ajouter: "))
+personnes[nom_nouvelle_personne] = âge_nouvelle_personne
+
+# Affiche à nouveau le dictionnaire des personnes après l'ajout.
+print("Dictionnaire des personnes mis à jour :", personnes)

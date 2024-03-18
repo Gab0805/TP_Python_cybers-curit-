@@ -1,0 +1,22 @@
+# la fonction pair permer de déterminer si un nomfbre entier est pair
+def pair(entier):
+    if entier % 2 == 0: # si le reste de la division euclidienne de entier par 2 est égal à 0
+        return True     # alors entier est un nombre pair
+    else: 
+        return False    # sinon entier n'est pas un nombre pair
+
+# controle de saisie 
+while True:  
+    try:
+        nbre_entier = int(input("Donner un nombre entier: " ))
+        if nbre_entier > 0:
+            if pair(nbre_entier):
+                print(nbre_entier, "est un nombre pair")
+            else: print(nbre_entier, "est un nombre impair")
+            break
+        else:
+            print("Erreur, vous avez entré un nombre négatif")
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")
+
+

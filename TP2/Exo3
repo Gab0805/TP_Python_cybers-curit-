@@ -1,0 +1,12 @@
+# la fonction convertir_en_celsius permet de convertir une température fahrenheit, en degré celsius
+def  convertir_en_celsius (fahrenheit):
+    return (fahrenheit-32)*9/5 # formule de converion degré fahrenheit en degré celsius
+
+# controle de saisie 
+while True:  
+    try:
+        f = float(input("Donnez la température en Fahrenheit: "))
+        print ("la convertion en degré celsius donne :", convertir_en_celsius (f))
+        break
+    except ValueError:
+        print("Erreur, vous avez entré un caractére")
