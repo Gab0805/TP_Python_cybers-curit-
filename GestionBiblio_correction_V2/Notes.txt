@@ -1,0 +1,11 @@
+1. Utilisation de @property:
+            - Dans la classe Livre -> en cours ...
+            - Dans la classe Librairie
+2. Controle de saisie: 
+            - Dans la classe Livre
+            - Dans le fichier main
+3. Génération d'exception -> raise BaseException()
+            - Dans la classe Livre
+4. Amélioration de performance de recherche de livre:
+            - Dans la classe Librairie 
+            - Modifier un livre dans la classe Librairie     
