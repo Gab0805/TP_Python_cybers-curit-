@@ -5,6 +5,6 @@ Filtrage des personnes par âge :● Ajoutez une méthode filtrer_personnes_par_
 """
 
 def filter_petsonne_par_age(self, min_age, max_age) :
-        for person in self.personne :
-            if min_age <= person.age <= max_age :
-                print(f"Nom : {person.nom}, Âge : {person.age}")
+    for person in self.personne :
+        if min_age <= person.age <= max_age :
+            print(f"Nom : {person.nom}, Âge : {person.age}")
