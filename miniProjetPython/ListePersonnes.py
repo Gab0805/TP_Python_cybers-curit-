@@ -18,11 +18,7 @@ la base de données MySQL.
 """
 
 def ajouter_personne(self, personne):
-        titre = personne.nom # equivalent à livre.get_titre() car maintenant titre est consideré comme proprièté
+        titre = personne.nom 
         self.personnes[personne] = personne
     
-   # def afficher_librairie(self):
-   #     print("-----------------------------------------------")
-   #     for titre,livre in self.livres.items():
-    #        print(f"{titre} -> {livre.auteur}, {livre.genre}, {livre.prix}")
-     #       print("---------------------------------------------")
+ 
