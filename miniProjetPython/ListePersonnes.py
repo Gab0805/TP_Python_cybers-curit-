@@ -10,7 +10,11 @@ class ListePersonnes : # définition de la classe ListePersonnes
 
 """
 Ajoutez une méthode ajouter_personne(nom, age) pour ajouter une nouvelle
-personne à la liste
+personne à la liste et enregistrer ces informations dans une table "Personnes" de
+la base de données MySQL.
+➢ Ajoutez une méthode afficher_personnes() pour afficher les détails de toutes les
+personnes dans la liste en récupérant les données depuis la table "Personnes" de
+la base de données MySQL.
 """
 
 def ajouter_personne(self, personne):

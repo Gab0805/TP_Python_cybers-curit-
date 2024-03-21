@@ -1,6 +1,5 @@
 """
-Créez une classe ListePersonnes qui contient une liste d'objets de
-type Personne.
+Créez un objet de type Personne.
 
 """
 
