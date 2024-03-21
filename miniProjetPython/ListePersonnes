@@ -1,0 +1,14 @@
+"""
+Créez une classe ListePersonnes qui contient une liste d'objets de
+type Personne.
+
+"""
+
+class Personne : # définition de la classe Personne
+    def __init__(self, nom, age) :
+        self.nom = nom
+        self.age = age
+
+class ListePersonnes : # définition de la classe ListePersonnes
+    def __init__(self) :
+        self.personnes = []

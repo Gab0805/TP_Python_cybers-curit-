@@ -1,4 +1,4 @@
-import mysql.connector as mysql
+import mysql.connector as mysql  #cette methode n'est pas très sécuritaire. Voir database.py pour un meilleur
 
 connexion = mysql.connect(
     user ="root",
