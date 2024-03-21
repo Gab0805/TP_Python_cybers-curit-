@@ -8,7 +8,3 @@ class Personne :  # définition de la claaae Personne
     def __init__(self, nom, age) :
         self.nom = nom
         self.age = age
-
-class ListePersonnes : # définition de la classe ListePersonne
-    def __init__(self) :
-        self.personne = []
