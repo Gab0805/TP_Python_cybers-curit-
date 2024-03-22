@@ -22,11 +22,11 @@ def insertion(code_permanent,nom,prenom,date_naissance,specialite): # insertion 
     db.commit()
     
 # tester l'insertion
-code_permanent = input("donner le code permanent")
-nom = input("donner le nom")
-prenom = input("donner le prénom")
-date_naissance = input("donner la date de naissance")
-specialite = input("donner la spécialité")
+code_permanent = input("donner le code permanent: ")
+nom = input("donner le nom: ")
+prenom = input("donner le prénom: ")
+date_naissance = input("donner la date de naissance: ")
+specialite = input("donner la spécialité: ")
 
 insertion(code_permanent,nom,prenom,date_naissance,specialite)
 
