@@ -20,10 +20,10 @@ def afficher():
     cursor.execute(sql_afficher)
     etudiants = cursor.fetchall() # récupération des données 
 
-    print (etudiants)
-    exit()
-    for etudiant in etudiants: # affichage 
-        print(etudiant)
+    #print (etudiants)
+    
+    #for etudiant in etudiants: # affichage 
+        #print(etudiant)
 
 insertion()
 afficher()
