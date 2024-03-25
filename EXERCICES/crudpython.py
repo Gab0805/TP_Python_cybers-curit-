@@ -33,13 +33,13 @@ def update_utilisateur(code_permanent,specialite):
     cursor = connexion_bd.cursor()
     cursor.execute("""
         UPDATE table_utilisateurs
-        SET specialite = %s           # on modifie la specialité de l'utisateur
+        SET specialite = %s           # on modifie la specialité de l'utilisateur
         WHERE code_permanent = %s     # sachant son code permanent
     """, (specialite, code_permanent)
     )
     connexion_bd.commit()
     
-
+# suppression d'un utilisateur
 def supprimer_utilisateur(code_permanent):
     cursor = connexion_bd.cursor()
     cursor.execute("""
@@ -49,14 +49,14 @@ def supprimer_utilisateur(code_permanent):
     )
     connexion_bd.commit()
 
-crea_utilisateur("mado11129902", "wade", "alain", "11-12-1999", "pilote")
+crea_utilisateur("mado11129902", "wade", "alain", "11-12-1999", "pilote") # ajout d'un utilisateur
 
 print("\n affchage de la table des utilisateurs:")
 afficher_utilisateur()
 
-#update_utilisateur("nine08052001", "directeur")
+#update_utilisateur("nine08052001", "directeur") # mise à jour des utilisateurs
     
-supprimer_utilisateur("defi01029202")
+supprimer_utilisateur("defi01029202") # suppression de l'utilisateur dont le code permanent est defi01029202
 
 print("\n affchage de la table des utilisateurs après suppresion:")
 afficher_utilisateur()
