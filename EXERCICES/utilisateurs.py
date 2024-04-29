@@ -74,3 +74,31 @@ user = create_user(email,password,nom)
 update_user(1,'test@test.co','1233467','Amadou Diallo')
 read_users()
 #print(user)
+
+"""
+Sur le fichier utilisateur.py rajouter un menu : ajouter un utilisateur, 
+mettre à jour un utilisateur, supprimer un utilisateur, lister les utilisateurs.
+"""
+def menu():
+    try:
+        print("1. Ajouter un utilisateur: ")
+        print("2. Mettre à jour un utilisateur: ")
+        print("3. Supprimer un utilisateur: ")
+        print("4. Afficher tous les utilisateurs: ")
+        print("5. Appuyez sur q pour quitter: ")
+        
+        while(True):
+            choix = input("Veuillez choisir parmi les options suivantes: ")
+            if choix == 1:
+                email = input("Donner l'adresse email: ")
+                password = input("Donner le mot de passe: ")
+                nom = input("Donner le nom: ")
+                user = create_user(email, password,nom)
+            elif choix == 2:
+                email = input("Donner l'adresse email: ")
+                password = input("Donner le mot de passe: ")
+                nom = input("Donner le nom: ")
+                user = update_user(email, password,nom)
+            elif choix == 3:
+
+
